@@ -6,10 +6,12 @@ The code here is proof of the concepts shown in the article.
 
 To run the tests ...
 
+```
 $ jasmine spec/_multipleIt.spec.js -random:true
 $ jasmine spec/_multipleIt.spec.js -random:false
 $ jasmine spec/_singleIt.spec.js -random:true
 $ jasmine spec/_singleIt.spec.js -random:false
+```
 
 Initial Results:
 
