@@ -21,3 +21,25 @@ Initial Results:
 | Multiple IT within describe | FALSE | 4.375s |
 | Single IT within many describes | TRUE | 8.426s |
 | Single IT within many describes | FALSE | 8.380s |
+
+In looking into these numbers, there was concern that the for-loops might have altered the test numbers.
+
+Generated the following files to remove looping (1,000 tests each).
+
+To run the non-iterative tests ...
+
+```
+$ jasmine spec/_multipleIt.2.spec.js -random:true
+$ jasmine spec/_multipleIt.2.spec.js -random:false
+$ jasmine spec/_singleIt.2.spec.js -random:true
+$ jasmine spec/_singleIt.2.spec.js -random:false
+```
+
+Non-Iterative Results:
+
+| Type | Random Run | Result |
+|------|------------|--------|
+| Multiple IT within describe | TRUE | 0.534s |
+| Multiple IT within describe | FALSE | 0.545s |
+| Single IT within many describes | TRUE | 0.943s |
+| Single IT within many describes | FALSE | 0.959s |
