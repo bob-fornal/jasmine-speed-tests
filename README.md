@@ -17,10 +17,10 @@ Initial Results:
 
 | Type | Random Run | Result |
 |------|------------|--------|
-| Multiple IT within describe | TRUE | 4.294s |
-| Multiple IT within describe | FALSE | 4.375s |
-| Single IT within many describes | TRUE | 8.426s |
-| Single IT within many describes | FALSE | 8.380s |
+| Multiple IT within DESCRIBE | TRUE | 4.294s |
+| Multiple IT within DESCRIBE | FALSE | 4.375s |
+| Single IT within many DESCRIBES | TRUE | 8.426s |
+| Single IT within many DESCRIBES | FALSE | 8.380s |
 
 In looking into these numbers, there was concern that the for-loops might have altered the test numbers.
 
@@ -39,7 +39,7 @@ Non-Iterative Results:
 
 | Type | Random Run | Result |
 |------|------------|--------|
-| Multiple IT within describe | TRUE | 0.534s |
-| Multiple IT within describe | FALSE | 0.545s |
-| Single IT within many describes | TRUE | 0.943s |
-| Single IT within many describes | FALSE | 0.959s |
+| Multiple IT within DESCRIBE | TRUE | 0.534s |
+| Multiple IT within DESCRIBE | FALSE | 0.545s |
+| Single IT within many DESCRIBES | TRUE | 0.943s |
+| Single IT within many DESCRIBES | FALSE | 0.959s |
