@@ -29,6 +29,8 @@ Generated the following files to remove looping (1,000 tests each).
 To run the non-iterative tests ...
 
 ```
+$ jasmine spec/_multipleDescribe.spec.js -random:true
+$ jasmine spec/_multipleDescribe.spec.js -random:false
 $ jasmine spec/_multipleIt.2.spec.js -random:true
 $ jasmine spec/_multipleIt.2.spec.js -random:false
 $ jasmine spec/_singleIt.2.spec.js -random:true
@@ -37,9 +39,11 @@ $ jasmine spec/_singleIt.2.spec.js -random:false
 
 Non-Iterative Results:
 
-| Type | Random Run | Result |
-|------|------------|--------|
-| Multiple IT within DESCRIBE | TRUE | 0.534s |
-| Multiple IT within DESCRIBE | FALSE | 0.545s |
-| Single IT within many DESCRIBES | TRUE | 0.943s |
-| Single IT within many DESCRIBES | FALSE | 0.959s |
+| Number of Tests | Type | Random Run | Result |
+|-----------------|------|------------|--------|
+| 1,000 | Multiple DESCRIBE | TRUE | 5.182s |
+| 1,000 | Multiple DESCRIBE | FALSE | 5.109s |
+| 1,000 | Multiple IT within DESCRIBE | TRUE | 0.534s |
+| 1,000 | Multiple IT within DESCRIBE | FALSE | 0.545s |
+| 1,000 | Single IT within many DESCRIBES | TRUE | 0.943s |
+| 1,000 | Single IT within many DESCRIBES | FALSE | 0.959s |
