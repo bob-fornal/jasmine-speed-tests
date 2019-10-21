@@ -28,7 +28,7 @@ Generated the following files to remove looping (1,000 tests each).
 
 To run the non-iterative tests ...
 
-```
+```shell
 $ jasmine spec/_multipleDescribe.spec.js -random:true
 $ jasmine spec/_multipleDescribe.spec.js -random:false
 $ jasmine spec/_multipleIt.2.spec.js -random:true
